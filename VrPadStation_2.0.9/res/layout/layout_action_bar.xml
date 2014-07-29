@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="13"
+    android:background="@drawable/carbon_texture" >
+    
+    <ImageView 
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="2"
+	    android:src="@drawable/logo_laser_bianco_128"/>
+    
+    <View
+	    android:layout_width="1dp"
+	    android:layout_height="match_parent"
+	    android:background="@android:color/darker_gray"/>
+    
+    <TextView 
+        android:id="@+id/textViewVoltage"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="2"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:padding="3dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="" />
+        
+    <View
+	    android:layout_width="1dp"
+	    android:layout_height="match_parent"
+	    android:background="@android:color/darker_gray"/>
+    
+    <TextView android:id="@+id/textViewGpsStatus"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="2"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:padding="3dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="" />            
+    
+    <View
+	    android:layout_width="1dp"
+	    android:layout_height="match_parent"
+	    android:background="@android:color/darker_gray"/>
+    
+    <TextView android:id="@+id/textViewDrone"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="2"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:padding="3dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="" />    
+        
+    <View
+	    android:layout_width="1dp"
+	    android:layout_height="match_parent"
+	    android:background="@android:color/darker_gray"/>
+    
+  	<ImageButton
+        style="@style/imageButton_mainmenu"
+	    android:id="@+id/btnConnect"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/connect_small"
+	    android:enabled="true" />
+  	
+	<ImageButton
+        style="@style/imageButton_mainmenu"
+	    android:id="@+id/btnGcs"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/gcs_small"
+	    android:enabled="false" />
+	
+	<ImageButton
+        style="@style/imageButton_mainmenu"
+	    android:id="@+id/btnRadio"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/joystick_small"
+	    android:enabled="true" />
+	
+	<ImageButton
+        style="@style/imageButton_mainmenu"
+	    android:id="@+id/btnGimbal"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/gimbal_small"
+	    android:enabled="false" />
+	
+	<ImageButton
+        style="@style/imageButton_mainmenu"
+	    android:id="@+id/btnSettings"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/settings_small"
+	    android:enabled="true" />
+
+</LinearLayout>

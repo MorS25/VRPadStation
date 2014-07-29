@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   	<PreferenceCategory
+        android:title="CAMERA SETTINGS" />
+   		<CheckBoxPreference
+              android:title="Enable GoPro"
+              android:defaultValue="false"
+              android:key="gopro_enabled" />  
+   		<CheckBoxPreference
+              android:title="Connect at startup"
+              android:defaultValue="false"
+              android:key="gopro_startup" />  
+   	    <EditTextPreference
+              android:name="GoPro SSID"
+              android:dialogTitle=""
+              android:summary=""
+              android:defaultValue=""
+              android:title="GoPro SSID"
+              android:key="gopro_ssid"
+              android:enabled="false" />
+   	    <EditTextPreference
+              android:name="GoPro Password"
+              android:dialogTitle=""
+              android:summary=""
+              android:defaultValue=""
+              android:title="GoPro Password"
+              android:key="gopro_password"
+              android:enabled="false"
+              android:inputType="textPassword" />
+   	    <EditTextPreference
+              android:name="Camera Address"
+              android:dialogTitle=""
+              android:summary=""
+              android:defaultValue=""
+              android:title="Camera Address"
+              android:key="cameraAddress"
+              android:enabled="true" />
+</PreferenceScreen>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearData"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10" >
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:gravity="center"
+    	android:baselineAligned="false" >
+
+		<LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.8"
+	        android:orientation="vertical"
+	        android:gravity="center" >
+        
+		    <Switch
+	        	android:id="@+id/switchToggleWaypointMode"
+		        android:layout_width="wrap_content"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.5"
+	        	android:text="WAYPOINT"
+		        android:textColor="@android:color/white"
+	            android:gravity="center" />     
+	            
+		    <Switch
+		        android:id="@+id/switchTogglePolygonMode"
+		        android:layout_width="wrap_content"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.5"
+		        android:text="POLYGON"
+		        android:textColor="@android:color/white"
+	            android:gravity="center" /> 
+	            
+    	</LinearLayout>   
+    	
+		<LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.3"
+	        android:padding="2dp"
+	        android:orientation="vertical"
+	        android:gravity="center" >
+		    		    
+           <Button
+	       		style="@style/button_mainmenu"
+	            android:id="@+id/btnSetModeAuto"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+		        android:padding="2dp"
+		        android:textColor="@android:color/white"
+		        android:text="MODE\nAUTO" />  
+		    
+    	</LinearLayout>   
+        
+    </LinearLayout>
+        
+    <LinearLayout
+        android:id="@+id/waypointsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp" >
+        
+        <ListView
+	        android:id="@+id/listViewWaypoints"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+    	</ListView>
+    </LinearLayout>
+    
+    
+</LinearLayout>

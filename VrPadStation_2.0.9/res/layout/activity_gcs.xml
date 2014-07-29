@@ -1,0 +1,222 @@
+<LinearLayout
+   	xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/mapLayer"
+ 	android:layout_width="match_parent"
+ 	android:layout_height="match_parent"
+ 	android:orientation="horizontal"
+ 	android:baselineAligned="false"
+ 	android:weightSum="20" >
+	    
+    <LinearLayout
+	    android:id="@+id/droneDataLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:orientation="horizontal" >
+	         
+         <com.laser.ui.widgets.CustomViewPager
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/fragmentMain"  >
+			<android.support.v4.view.PagerTabStrip
+	           android:id="@+id/pagerTabStrip"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_gravity="top"
+	           android:paddingBottom="2dp"
+	           android:paddingTop="1dp" />
+		</com.laser.ui.widgets.CustomViewPager>       
+		         
+    </LinearLayout>
+    
+    <FrameLayout 
+        android:id="@+id/mapContainer"
+	    android:layout_width="0dp"
+	    android:layout_height="match_parent"
+	    android:layout_weight="12" >
+		    	
+	    <fragment
+	        android:id="@+id/flightMapFragment"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        class="com.laser.ui.fragments.CustomMapFragment" />
+
+		<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:weightSum="1"
+	        android:orientation="horizontal"
+	        android:padding="4dp"
+	        android:gravity="center_vertical"
+	        android:background="@android:color/transparent" >		 
+
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:weightSum="7"
+		        android:orientation="vertical"
+		        android:padding="4dp"
+		        android:gravity="center_vertical"
+		        android:background="@android:color/transparent" >
+		
+		        
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+			       android:id="@+id/btnTakeOff"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+			       android:src="@drawable/take_off_drone" />  
+			       
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+			       android:id="@+id/btnGuided"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+			       android:src="@drawable/guided" />  
+			       
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+			       android:id="@+id/btnFollowMe"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+			       android:src="@drawable/followme" />  		        		        
+		        
+		        <ImageView
+		            android:id="@+id/btnHidePager"
+		            android:layout_width="50dp"
+		            android:layout_height="0dp"
+			        android:layout_weight="1"
+		            android:src="@null"
+		            android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+		            android:background="@drawable/border_hide_pager" />
+		        
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+			       android:id="@+id/btnLoiter"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+			       android:src="@drawable/mode_loiter" /> 
+			       
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+			       android:id="@+id/btnRtl"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+			       android:src="@drawable/mode_rtl" /> 
+			       
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+			       android:id="@+id/btnLand"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+			       android:src="@drawable/mode_land" /> 		        		        		        
+		    </LinearLayout>
+		    			    
+		    <LinearLayout
+           		android:id="@+id/layoutWaypoinsButtons"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:weightSum="7"
+		        android:orientation="vertical"
+		        android:padding="4dp"
+		        android:gravity="center_vertical"
+		        android:background="@android:color/transparent"
+		        android:visibility="gone" >
+		        			        
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+           		   android:id="@+id/btnLoadFromApm"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+        		   android:src="@drawable/download_from_apm" /> 
+        		   
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+           		   android:id="@+id/btnWriteToApm"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+        		   android:src="@drawable/upload_to_apm" /> 
+        		   
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+           		   android:id="@+id/btnLoadFromFile"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+        		   android:src="@drawable/read_from_file" /> 
+        		   
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+           		   android:id="@+id/btnWriteToFile"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+        		   android:src="@drawable/write_to_file" /> 
+        		   
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+           		   android:id="@+id/btnClearWaypoints"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+        		   android:src="@drawable/clear_wps" /> 
+        		   
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+           		   android:id="@+id/btnGeneratePolygon"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+        		   android:src="@drawable/gen_polygon" /> 
+        		   
+		        <ImageButton
+			       style="@style/imageButton_mainmenu_dark"
+           		   android:id="@+id/btnClearPolygon"
+			       android:layout_width="50dp"
+			       android:layout_height="0dp"
+			       android:layout_weight="1"
+			       android:scaleType="centerInside"
+			       android:layout_margin="2dp"
+        		   android:src="@drawable/clear_polygon" /> 
+			       	        		        		        
+		    </LinearLayout>
+		           		        		        
+	    </LinearLayout>
+	    
+	</FrameLayout> 
+	    	    	    
+</LinearLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12" >
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center_horizontal"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/btnTilt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Tilt" />
+
+        <Button
+            android:id="@+id/btnRoll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Roll" />
+
+        <Button
+            android:id="@+id/btnPan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Pan" />
+
+        <Button
+            android:id="@+id/btnShutter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Shutter" />        
+
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+        
+         <com.laser.ui.widgets.CustomViewPager
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/fragmentMain2" >
+		</com.laser.ui.widgets.CustomViewPager> 
+
+    </TableRow>
+			
+    <TableRow
+        android:id="@+id/tableRow21"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:text="Retract Angles"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="X"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/editTextRetractX"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:ems="10"
+            android:inputType="numberSigned" >
+        </EditText>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Y"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/editTextRetractY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:ems="10"
+            android:inputType="numberSigned" >
+        </EditText>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Z"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/editTextRetractZ"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:ems="10"
+            android:inputType="numberSigned" >
+        </EditText>
+         
+    </TableRow>
+    
+        <TableRow
+        android:id="@+id/tableRow22"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:text="Neutral Angles"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="X"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/editTextNeutralX"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:ems="10"
+            android:inputType="numberSigned" >
+        </EditText>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Y"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/editTextNeutralY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:ems="10"
+            android:inputType="numberSigned" >
+        </EditText>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Z"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/editTextNeutralZ"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:ems="10"
+            android:inputType="numberSigned" >
+        </EditText>
+         
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow23"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:text="Control Angles"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="X"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/editTextControlX"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:ems="10"
+            android:inputType="numberSigned" >
+        </EditText>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Y"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/editTextControlY"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:ems="10"
+            android:inputType="numberSigned" >
+        </EditText>
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:text="Z"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/editTextControlZ"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:ems="10"
+            android:inputType="numberSigned" >
+        </EditText>
+         
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center_horizontal"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=" Send to drone "
+            android:gravity="center" />  
+    </TableRow>  
+    
+ 
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="MavLink Log" > 
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_mavlink_log_enabled"
+            android:title="MavLink log enabled" />
+    </PreferenceCategory> 
+    
+    <PreferenceCategory
+        android:key="pref_mavlink_connection"
+        android:title="Connection Settings" >        
+		<ListPreference 
+		    android:entries="@array/pref_mavlink_connection_type_entries"
+            android:title="Connection Type"
+            android:key="pref_mavlink_connection_type"
+            android:entryValues="@array/pref_mavlink_connection_type_values"
+            android:summary="Choose connection type"
+            android:defaultValue="USB" /> 
+        <EditTextPreference
+            android:defaultValue="10.0.0.68"
+            android:inputType="phone"
+            android:key="pref_server_ip"
+            android:title="TCP Server IP" />
+        <EditTextPreference
+            android:defaultValue="5555"
+            android:inputType="number"
+            android:key="pref_server_port"
+            android:title="TCP Server Port" />
+        <EditTextPreference
+            android:defaultValue="14550"
+            android:inputType="number"
+            android:key="pref_udp_server_port"
+            android:title="UDP Server Port" />
+		<ListPreference 
+	     	android:title="Bluetooth paired devices"
+	      	android:key="pref_bluetooth_paired_device"
+	        android:summary="Choose BT paired device" /> 
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="pref_mavlink"
+        android:title="MavLink Stream Rates" >
+
+        <ListPreference
+            android:defaultValue="57600"
+            android:entries="@array/TelemetryBaudTypes"
+            android:entryValues="@array/TelemetryBaudTypes"
+            android:key="pref_baud_type"
+            android:summary="Baud Rate of the USB Telementry Link"
+            android:title="Telemetry link speed" />
+        <EditTextPreference
+            android:defaultValue="2"
+            android:inputType="number"
+            android:key="pref_mavlink_stream_rate_ext_stat"
+            android:title="Waypoints, GPS raw, fence data, current waypoint, etc" />
+        <EditTextPreference
+            android:defaultValue="10"
+            android:inputType="number"
+            android:key="pref_mavlink_stream_rate_extra1"
+            android:title="Attitude" />
+        <EditTextPreference
+            android:defaultValue="2"
+            android:inputType="number"
+            android:key="pref_mavlink_stream_rate_extra2"
+            android:title="VFR_Hud data" />
+        <EditTextPreference
+            android:defaultValue="2"
+            android:inputType="number"
+            android:key="pref_mavlink_stream_rate_extra3"
+            android:title="AHRS, Hardware Status, Wind" />
+        <EditTextPreference
+            android:defaultValue="3"
+            android:inputType="number"
+            android:key="pref_mavlink_stream_rate_position"
+            android:title="Position data" />        
+        <EditTextPreference
+            android:defaultValue="0"
+            android:inputType="number"
+            android:key="pref_mavlink_stream_rate_raw_sensors"
+            android:title="Raw sensors" />    
+    </PreferenceCategory>
+
+</PreferenceScreen>

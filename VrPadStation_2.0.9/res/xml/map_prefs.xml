@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="pref_flight_data"
+        android:title="Map Data" >
+        <EditTextPreference
+            android:defaultValue="100"
+            android:inputType="number"
+            android:key="pref_max_fligth_path_size"
+            android:summary="Size of the fligth path, set to zero to disable."
+            android:title="Fligth path size" />        
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_auto_pan_enabled"
+            android:summary="Auto pan the map when a new GPS coordinate is received"
+            android:title="Enable auto pan" />
+        <EditTextPreference
+            android:defaultValue="17"
+            android:inputType="number"
+            android:key="pref_auto_pan_zoom"
+            android:summary="Zoom value of the auto pan."
+            android:title="Auto pan zoom" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:title="Map Types" >
+        <ListPreference
+            android:defaultValue="Satellite"
+            android:entries="@array/MapTypes"
+            android:entryValues="@array/MapTypes"
+            android:key="map_type"
+            android:summary="Type of map"
+            android:title="Map Type" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="pref_advanced"
+        android:title="Advanced" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_advanced_use_offline_maps"
+            android:summary="Use map tiles on the local storage, for offline map view"
+            android:title="Use offline maps" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_enable_tts"
+            android:summary="Audible messages for important events"
+            android:title="Enable Text To Speech" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_show_airports"
+            android:summary="Show airports location with red circles"
+            android:title="Show airports" />        
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+		android:layout_margin="5dip"
+		android:weightSum="14" >
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+	        android:orientation="vertical"
+			android:layout_margin="2dip"
+			android:gravity="center" >
+			
+	        <com.laser.ui.widgets.RangeProgressBar
+				android:id="@+id/progressRoll"
+				android:layout_width="match_parent"
+				android:layout_height="30dp" />
+	    </LinearLayout>
+	    
+        <TextView
+            android:id="@+id/txtProgressRoll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="" />
+	    
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="10"
+	        android:orientation="horizontal"
+			android:layout_margin="2dip" >
+	        
+	        <com.laser.ui.widgets.RangeProgressBar
+	            android:id="@+id/progressPitch"
+	            android:layout_width="30dp"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentLeft="true" /> 
+	            
+	        <com.laser.ui.widgets.RangeProgressBar
+	            android:id="@+id/progressThrottle"
+	            android:layout_width="30dp"
+	            android:layout_height="match_parent"
+	            android:layout_alignParentRight="true" /> 	  
+	            
+	        <TextView
+	            android:id="@+id/txtProgressPitch"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_toRightOf="@+id/progressPitch"
+	            android:layout_toLeftOf="@+id/progressThrottle"
+	            android:gravity="left|center_vertical"
+	            android:text=""
+	            android:layout_margin="2dp" />
+	        
+			<TextView
+	            android:id="@+id/txtProgressThrottle"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_toRightOf="@+id/progressPitch"
+	            android:layout_toLeftOf="@+id/progressThrottle"
+	            android:gravity="right|center_vertical"
+	            android:text=""
+	            android:layout_margin="2dp" />
+	    
+	    </RelativeLayout>
+	    
+	    
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+	        android:orientation="vertical"
+			android:layout_margin="2dip"
+			android:gravity="center" >
+        
+	        <com.laser.ui.widgets.RangeProgressBar
+				android:id="@+id/progressYaw"
+				android:layout_width="match_parent"
+				android:layout_height="30dp" />	        
+	    </LinearLayout>	    	
+	    
+        <TextView
+            android:id="@+id/txtProgressYaw"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+		android:layout_margin="5dip"
+		android:weightSum="9"  >
+        
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+	        android:orientation="vertical"
+			android:layout_margin="2dip"
+			android:gravity="center" >        
+	        <com.laser.ui.widgets.RangeProgressBar
+				android:id="@+id/progressRadio5"
+				android:layout_width="match_parent"
+				android:layout_height="30dp" />	        
+	    </LinearLayout>
+        <TextView
+            android:id="@+id/txtProgressRadio5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="" />	    	  	 
+	    
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+	        android:orientation="vertical"
+			android:layout_margin="2dip"
+			android:gravity="center" >        
+	        <com.laser.ui.widgets.RangeProgressBar
+				android:id="@+id/progressRadio6"
+				android:layout_width="match_parent"
+				android:layout_height="30dp" />	        
+	    </LinearLayout>
+        <TextView
+            android:id="@+id/txtProgressRadio6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="" />	    
+            
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+	        android:orientation="vertical"
+			android:layout_margin="2dip"
+			android:gravity="center" >        
+	        <com.laser.ui.widgets.RangeProgressBar
+				android:id="@+id/progressRadio7"
+				android:layout_width="match_parent"
+				android:layout_height="30dp" />	        
+	    </LinearLayout>
+        <TextView
+            android:id="@+id/txtProgressRadio7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="" />	        
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+	        android:orientation="vertical"
+			android:layout_margin="2dip"
+			android:gravity="center" >        
+	        <com.laser.ui.widgets.RangeProgressBar
+				android:id="@+id/progressRadio8"
+				android:layout_width="match_parent"
+				android:layout_height="30dp" />	        
+	    </LinearLayout>
+        <TextView
+            android:id="@+id/txtProgressRadio8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="" />	
+            
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+	        android:orientation="vertical"
+			android:layout_margin="2dip"
+			android:gravity="center" >        
+	        <Button
+				android:id="@+id/btnStartCalibration"
+		   		style="@style/button_mainmenu"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:textColor="@android:color/white"
+				android:text=" Start Calibration " />	        
+	    </LinearLayout>        
+                    
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+	        android:key="pref_graphics"
+	        android:title="Graphics Settings" >
+	   		<CheckBoxPreference
+	              android:title="Show FPS"
+	              android:defaultValue="true"
+	              android:key="showFps" />  
+	        <EditTextPreference
+	              android:name="Analog base radius"
+	              android:dialogTitle=""
+	              android:summary=""
+	              android:defaultValue="110"
+	              android:title="Analog base radius"
+	              android:inputType="number"
+	              android:key="anaBaseRadius" />  
+	        <EditTextPreference
+	              android:name="Analog stick radius"
+	              android:dialogTitle=""
+	              android:summary=""
+	              android:defaultValue="30"
+	              android:title="Analog stick radius"
+	              android:inputType="number"
+	              android:key="anaStickRadius" />   
+	        <CheckBoxPreference
+	              android:title="Lock analog sticks"
+	              android:defaultValue="false"
+	              android:key="lockAnaSticks" />
+	        <CheckBoxPreference
+	              android:title="Show trims"
+	              android:defaultValue="true"
+	              android:key="showTrims" />  
+	        <CheckBoxPreference
+	              android:title="Show potentiometers"
+	              android:defaultValue="true"
+	              android:key="showPots" />  
+	        <CheckBoxPreference
+	              android:title="Show timer"
+	              android:defaultValue="true"
+	              android:key="showTimer" />
+    	</PreferenceCategory>
+</PreferenceScreen>

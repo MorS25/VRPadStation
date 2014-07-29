@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8" >
+
+    <TableRow
+        android:id="@+id/tableRow0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:text="FLIGHT MODES"
+            android:gravity="center" />
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+
+        <Spinner
+            android:id="@+id/spinnerFlightMode1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:textSize="16sp"
+            android:text="PWM 0-1230"
+	       android:padding="2dp"
+	       android:gravity="center_vertical" />
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+
+        <Spinner
+            android:id="@+id/spinnerFlightMode2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:textSize="16sp"
+            android:text="PWM 1231-1360"
+	       android:padding="2dp"
+	       android:gravity="center_vertical" />
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+
+        <Spinner
+            android:id="@+id/spinnerFlightMode3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:textSize="16sp"
+            android:text="PWM 1361-1490"
+	       android:padding="2dp"
+	       android:gravity="center_vertical" />
+    </TableRow>    
+    
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+
+        <Spinner
+            android:id="@+id/spinnerFlightMode4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:textSize="16sp"
+            android:text="PWM 1491-1620"
+	       android:padding="2dp"
+	       android:gravity="center_vertical" />
+    </TableRow>      
+    
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+
+        <Spinner
+            android:id="@+id/spinnerFlightMode5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:textSize="16sp"
+            android:text="PWM 1621-1749"
+	       android:padding="2dp"
+	       android:gravity="center_vertical" />
+    </TableRow>    
+    
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+
+        <Spinner
+            android:id="@+id/spinnerFlightMode6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:textSize="16sp"
+            android:text="PWM 1750+"
+	       android:padding="2dp"
+	       android:gravity="center_vertical" />
+    </TableRow>      
+    
+    
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal" >
+        
+		<Button
+	       style="@style/button_mainmenu"
+	       android:id="@+id/btnSaveModes"	       
+	       android:layout_height="match_parent"
+	       android:layout_width="wrap_content"
+	       android:textColor="@android:color/white"
+	       android:textSize="16sp"
+	       android:text=" Save Modes "
+	       android:layout_margin="2dp"
+	       android:padding="5dp" />		
+    </TableRow>
+    
+ 
+</LinearLayout>

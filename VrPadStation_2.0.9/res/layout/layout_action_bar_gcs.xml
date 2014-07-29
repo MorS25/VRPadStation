@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:addStatesFromChildren="true">
+
+	<ImageButton
+        style="@style/imageButton_mainmenu"
+	    android:id="@+id/btnGcs"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/gcs_small"
+	    android:enabled="false" />
+	
+</FrameLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+    
+	<TextView
+		android:id="@+id/textViewName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.15"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:text="" />
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.7"
+	    android:orientation="horizontal"
+    	android:baselineAligned="false" >    
+	    
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="0.4"
+		    android:orientation="vertical"
+		    android:weightSum="1" >
+	
+			<ImageView
+			    android:id="@+id/imageViewComponent"
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+		    	android:layout_weight="0.6"
+		    	android:scaleType="centerInside"
+			    android:src="@null" />
+	
+			<CheckBox
+			    android:id="@+id/checkBoxStabilize"
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:layout_weight="0.2"
+			    android:text="Stabilize" />
+			
+			<CheckBox
+			    android:id="@+id/checkBoxInvert"
+			    android:layout_width="match_parent"
+			    android:layout_height="0dp"
+			    android:layout_weight="0.2"
+			    android:text="Invert" />
+	
+		</LinearLayout>
+		    
+		    
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="0.6"
+		    android:orientation="vertical"
+		    android:weightSum="4" >
+			
+			<TextView
+			    android:id="@+id/textViewServoLimits"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.5"
+		        android:gravity="center"
+			    android:text="Servo Limits" />
+				
+			<TableRow
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="1"
+		        android:gravity="center_horizontal"
+		        android:padding="5dp">
+		        
+			    <TextView
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.2"
+		            android:text="Min"
+		            android:gravity="center" />
+		
+		        <EditText
+		            android:id="@+id/editTextServoLimitMin"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.3"
+		            android:ems="10"
+		            android:inputType="number" >
+		        </EditText>
+		        
+		        <TextView
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.2"
+		            android:text="Max"
+		            android:gravity="center" />
+		
+		        <EditText
+		            android:id="@+id/editTextServoLimitMax"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.3"
+		            android:ems="10"
+		            android:inputType="number" >
+		        </EditText>
+		    </TableRow>
+		    
+			<TextView
+			    android:id="@+id/textViewAngleLimits"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="0.5"
+		        android:gravity="center"
+			    android:text="Angle Limits" />	
+		    
+		    
+			<TableRow
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="1"
+		        android:gravity="center_horizontal"
+		        android:padding="5dp">
+		        
+			    <TextView
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.2"
+		            android:text="Min"
+		            android:gravity="center" />
+		
+		        <EditText
+		            android:id="@+id/editTextAngleLimitMin"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.3"
+		            android:ems="10"
+		            android:inputType="numberSigned" >
+		        </EditText>
+		        
+		        <TextView
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.2"
+		            android:text="Max"
+		            android:gravity="center" />
+		
+		        <EditText
+		            android:id="@+id/editTextAngleLimitMax"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.3"
+		            android:ems="10"
+		            android:inputType="numberSigned" >
+		        </EditText>
+		    </TableRow>
+		    
+			<TableRow
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="1"
+		        android:gravity="center_horizontal"
+		        android:padding="5dp">
+		        
+			    <TextView
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.2"
+		            android:text="Input Ch"
+		            android:gravity="center" />
+	
+			    <Spinner
+			        android:id="@+id/spinnerInputCh"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.3" />
+		        
+		        <TextView
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.2"
+		            android:text="Output Ch"
+		            android:gravity="center" />
+	
+				<Spinner
+			        android:id="@+id/spinnerOutputCh"
+		            android:layout_width="0dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.3" />	
+	
+		    </TableRow>		
+		    
+		</LinearLayout>	    
+	    
+	</LinearLayout>	    
+    
+    
+	<Button
+   		style="@style/button_mainmenu"
+		android:textColor="@android:color/white"
+	    android:id="@+id/btnSave"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.15"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+        android:text=" Send to drone " />
+
+    
+</LinearLayout>

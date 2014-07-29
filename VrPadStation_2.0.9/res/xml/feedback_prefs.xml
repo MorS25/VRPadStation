@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">              
+    <PreferenceCategory
+        android:title="AUDIO FEEDBACK" />
+   		<CheckBoxPreference
+              android:title="Throttle audio"
+              android:defaultValue="true"
+              android:key="throttleAudio" />
+   		
+   	<PreferenceCategory
+        android:title="TIMER SETTINGS" />
+   	    <EditTextPreference
+              android:name="Timer"
+              android:dialogTitle=""
+              android:summary=""
+              android:defaultValue="0"
+              android:title="Timer (seconds)"
+              android:inputType="number"
+              android:key="timer" />   
+   		<CheckBoxPreference
+              android:title="Set Timer"
+              android:defaultValue="false"
+              android:key="setTimer" />  
+</PreferenceScreen>

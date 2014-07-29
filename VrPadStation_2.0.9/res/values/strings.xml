@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>   
+    
+    <string-array name="battery_types">
+        <item>3S</item>
+        <item>4S</item>
+    </string-array>
+    
+	<string-array name = "SettingsListGcs">
+        <item name="Map">"Map"</item>
+        <item name="MAVLink">MAVLink</item>
+        <item name="Flight Modes">Flight Modes</item>
+        <item name="Parameters">Parameters</item>
+        <item name="Acc Calibration">Acc Calibration</item>
+        <item name="Mag Calibration">Mag Calibration</item>
+        <item name="Radio Calibration">Radio Calibration</item>
+        <item name="Failsafe">"Failsafe"</item>
+        <!-- <item name="Terminal">"Terminal"</item>  -->
+	</string-array>
+	
+	<string-array name = "SettingsListRadio">
+        <item name="Map">"Map"</item>
+        <item name="MAVLink">MAVLink</item>
+        <item name="PPMSUM">PPMSUM</item>
+        <item name="RC Transmission">RC Transmission Type</item>
+        <item name="RC Mode">RC Mode</item>
+        <item name="Flight Modes">Flight Modes</item>
+        <item name="Graphics">"Graphics"</item>
+        <item name="Feedback">"Feedback"</item>
+        <item name="Camera">"Camera"</item>
+        <item name="Drone Roll">Drone Roll</item>
+        <item name="Drone Pitch">Drone Pitch</item>
+        <item name="Drone Throttle">Drone Throttle</item>
+        <item name="Drone Yaw">Drone Yaw</item>
+	</string-array>
+	
+	<string-array name = "SettingsListGimbal">
+        <item name="MAVLink">MAVLink</item>
+        <item name="Gimbal Roll">"Gimbal Roll"</item>
+        <item name="Gimbal Tilt">"Gimbal Tilt"</item>
+        <item name="Gimbal Pan">"Gimbal Pan"</item>
+        <item name="Gimbal Shutter">"Gimbal Shutter"</item>
+        <item name="Gimbal Angles">Gimbal Angles</item>
+	</string-array>
+	
+    <string-array name = "SettingsList">
+        <item name="Map">"Map"</item>
+        <item name="MAVLink">MAVLink</item>
+        <item name="PPMSUM">PPMSUM</item>
+        <item name="RC Mode">RC Mode</item>
+        <item name="RC Transmission">RC Transmission</item>
+        <item name="Flight Modes">Flight Modes</item>
+        <item name="Graphics">"Graphics"</item>
+        <item name="Feedback">"Feedback"</item>
+        <item name="Camera">"Camera"</item>
+        <item name="Drone Roll">Drone Roll</item>
+        <item name="Drone Pitch">Drone Pitch</item>
+        <item name="Drone Drone Throttle">Drone Throttle</item>
+        <item name="Drone Yaw">Drone Yaw</item>
+        <item name="Gimbal Roll">"Gimbal Roll"</item>
+        <item name="Gimbal Tilt">"Gimbal Tilt"</item>
+        <item name="Gimbal Pan">"Gimbal Pan"</item>
+        <item name="Gimbal Shutter">"Gimbal Shutter"</item>
+        <item name="Gimbal Angles">Gimbal Angles</item>
+        <item name="Calibration">Calibration</item>
+        <item name="Parameters">Parameters</item>
+    </string-array>    
+                
+    <string-array name="TelemetryBaudTypes">
+        <item name="19200">19200</item>
+        <item name="38400">38400</item>
+        <item name="57600">57600</item>
+        <item name="115200">115200</item>
+    </string-array> 
+       
+    <string-array name="MapTypes">
+        <item name="Terrain">Terrain</item>
+        <item name="Hybrid">Hybrid</item>
+        <item name="Normal">Normal</item>
+        <item name="Satellite">Satellite</item>
+    </string-array>    
+            
+    <string name="app_name">VR Pad Station</string>    
+    
+    <string name="file_saved">File Saved</string>
+    <string name="error_when_saving">Error when saving</string>
+    <string name="select_file_to_open">Select file to open:</string>
+    <string name="error_when_opening_file">Error when opening file</string>
+    <string name="exiting_polygon_mode">Exiting Polygon Mode</string>
+    <string name="entering_polygon_mode">Entering Polygon Mode</string>
+    <string name="no_files">No Files</string> 
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+        
+    <string name="rc_channels">RC Channels</string>
+    <string name="rc_servos">Servos</string>
+
+    
+
+    <string-array name="pref_mavlink_connection_type_entries">       
+        <item>USB</item>
+        <item>Bluetooth</item>
+        <item>Tcp</item>
+        <item>Udp</item>
+    </string-array>
+    <string-array name="pref_mavlink_connection_type_values">       
+        <item>USB</item>
+        <item>BT</item>
+        <item>TCP</item>
+        <item>UDP</item>
+    </string-array>
+    
+    <string-array name="gimbal_output_ch_items">
+		<item>Disable</item>         
+		<item>5</item>
+		<item>6</item>         
+		<item>7</item>         
+		<item>8</item>         
+		<item>9</item>         
+		<item>10</item>         
+		<item>11</item>                  
+    </string-array>
+    <string-array name="gimbal_input_ch_items">
+		<item>Disable</item>         
+		<item>5</item>
+		<item>6</item>         
+		<item>7</item>         
+		<item>8</item>                      
+    </string-array>
+    
+    <string-array name="failsafe_items">
+        <item>Disabled</item>
+        <item>Enabled always RTL</item>
+        <item>Enabled continue with mission in AUTO mode</item>
+        <item>Enabled always LAND</item>                          
+    </string-array>
+    
+    <string-array name="cmp_items_orient">
+		<item>ROTATION_NONE</item>     
+		<item>ROTATION_YAW_45</item>
+		<item>ROTATION_YAW_90</item>
+		<item>ROTATION_YAW_135</item>
+		<item>ROTATION_YAW_180</item>
+		<item>ROTATION_YAW_225</item>
+		<item>ROTATION_YAW_270</item>
+		<item>ROTATION_YAW_315</item>     
+        <item>ROTATION_ROLL_180</item>
+        <item>ROTATION_ROLL_180_YAW_45</item>
+        <item>ROTATION_ROLL_180_YAW_90</item>
+        <item>ROTATION_ROLL_180_YAW_135</item>
+        <item>ROTATION_PITCH_180</item>
+        <item>ROTATION_ROLL_180_YAW_225</item>
+        <item>ROTATION_ROLL_180_YAW_270</item>
+        <item>ROTATION_ROLL_180_YAW_315</item>
+        <item>ROTATION_ROLL_90</item>
+        <item>ROTATION_ROLL_90_YAW_45</item>
+        <item>ROTATION_ROLL_90_YAW_90</item>
+        <item>ROTATION_ROLL_90_YAW_135</item>
+        <item>ROTATION_ROLL_270</item>
+        <item>ROTATION_ROLL_270_YAW_45</item>
+        <item>ROTATION_ROLL_270_YAW_90</item>
+        <item>ROTATION_ROLL_270_YAW_135</item>
+        <item>ROTATION_PITCH_90</item>
+        <item>ROTATION_PITCH_270</item>
+        <item>ROTATION_MAX</item>
+    </string-array>
+</resources>

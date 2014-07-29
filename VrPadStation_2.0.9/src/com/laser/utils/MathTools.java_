@@ -1,0 +1,81 @@
+package com.laser.service;
+
+import com.google.android.gms.maps.model.LatLng;
+
+public class MathTools {
+	
+
+	public static double toRad(double d)
+	{
+		return d * (Math.PI / 180);
+	}
+	
+	public static double toDeg(double r)
+	{
+		return r * (180 / Math.PI);
+	}
+	
+  /**
+   * @return distance in meters
+   *
+   * Uses http://en.wikipedia.org/wiki/Haversine_formula
+   */
+	public static double distance(double lat1, double lon1, double lat2, double lon2)
+	{
+		double R = 6371 * 1000.0; //m
+		double dLat = toRad(lat2 - lat1);
+		double dLon = toRad(lon2 - lon1);
+		double lat1r = toRad(lat1);
+		double lat2r = toRad(lat2);
+		
+		double a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+				Math.sin(dLon / 2) * Math.sin(dLon / 2) * Math.cos(lat1r) * Math.cos(lat2r);
+	    double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+		double d = R * c;
+		
+	    return d;
+	}
+	
+	
+  /**
+   * Per http://www.movable-type.co.uk/scripts/latlong.html
+   */
+	public static int bearing(double lat1, double lon1, double lat2, double lon2)
+	{
+		double dLon = toRad(lon2 - lon1);
+		double lat1r = toRad(lat1);
+		double lat2r = toRad(lat2);
+
+		double y = Math.sin(dLon) * Math.cos(lat2r);
+		double x = Math.cos(lat1r) * Math.sin(lat2r) - Math.sin(lat1r) * Math.cos(lat2r) * Math.cos(dLon);
+		double r = Math.atan2(y, x);
+
+	    /* Since atan2 returns values in the range -π ... +π (that is, -180° ... +180°), to normalise the 
+	     * result to a compass bearing (in the range 0° ... 360°, with −ve values transformed into the 
+	     * range 180° ... 360°), convert to degrees and then use (θ+360) % 360, where % is modulo.
+	     */
+		int brng = (int) toDeg(r);
+
+	    return (brng + 360) % 360;
+	}
+	
+  /** 
+   * Given a start point, initial bearing, and distance, this will calculate the
+   * destination point  along a (shortest distance) great circle arc.
+   */
+	public static LatLng applyBearing(double lat1d, double lon1d, double distance, int bearing)
+	{
+		double R = 6371 * 1000.0; // m
+		double brng = toRad(bearing);
+		double lat1 = toRad(lat1d);
+		double lon1 = toRad(lon1d);
+
+		double lat2 = Math.asin(Math.sin(lat1) * Math.cos(distance / R) +
+				Math.cos(lat1) * Math.sin(distance / R) * Math.cos(brng));
+		double lon2 = lon1 + Math.atan2(Math.sin(brng) * Math.sin(distance / R) * Math.cos(lat1),
+				Math.cos(distance / R) - Math.sin(lat1) * Math.sin(lat2));
+
+		double lonNorm = (lon2 + 3 * Math.PI) % (2 * Math.PI) - Math.PI;
+	    return new LatLng(toDeg(lat2), toDeg(lonNorm));
+	}
+}

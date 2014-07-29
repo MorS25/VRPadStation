@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearData"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:orientation="horizontal"
+	    android:layout_weight="1"
+	    android:weightSum="1"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >   
+	    	    
+	    <ImageButton
+	       style="@style/imageButton_mainmenu"
+	       android:id="@+id/btnZoom"
+	       android:layout_width="0dp"
+	       android:layout_height="match_parent"
+	       android:layout_weight="0.33"
+	       android:layout_margin="2dp"
+	       android:scaleType="centerInside"
+	       android:src="@drawable/position_icon" />
+	    
+	    <Button
+	       style="@style/button_mainmenu"
+	       android:id="@+id/btnToggleArm"
+	       android:layout_width="0dp"
+	       android:layout_height="match_parent"
+	       android:layout_weight="0.33"
+	       android:layout_margin="2dp" />
+	                       
+	    <ImageButton
+	       style="@style/imageButton_mainmenu"
+	       android:id="@+id/btnClearTrack"
+	       android:layout_width="0dp"
+	       android:layout_height="match_parent"
+	       android:layout_weight="0.33"
+	       android:layout_margin="2dp"
+	       android:scaleType="centerInside"
+	       android:src="@drawable/clear_track" />
+	    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:orientation="vertical"
+	    android:layout_weight="6"
+	    android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border" >
+
+        <com.laser.ui.widgets.AutoResizeTextView 
+            android:id="@+id/tvPadBattery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:lines="1" />
+        
+       	<com.laser.ui.widgets.AutoResizeTextView 
+            android:id="@+id/tvSolarRadiation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:lines="1" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewDrone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+            </LinearLayout>
+        </ScrollView>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:orientation="horizontal"
+	    android:layout_weight="1"
+	    android:weightSum="1"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+	    
+        <ImageButton
+	       style="@style/imageButton_mainmenu"
+	       android:id="@+id/btnAltUp"
+	       android:layout_width="0dp"
+	       android:layout_height="match_parent"
+	       android:layout_weight="0.33"
+	       android:layout_margin="2dp"
+	       android:scaleType="centerInside"
+	       android:src="@drawable/arrow_up" />   
+	    
+        <com.laser.ui.widgets.AutoResizeTextView 
+            android:id="@+id/tvSetAltitude"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+	        android:layout_margin="2dp"
+            android:lines="1"
+            android:gravity="center"
+            android:background="@drawable/border" />       
+        
+	    <ImageButton
+	       style="@style/imageButton_mainmenu"
+	       android:id="@+id/btnAltDown"
+	       android:layout_width="0dp"
+	       android:layout_height="match_parent"
+	       android:layout_weight="0.33"
+	       android:layout_margin="2dp"
+	       android:scaleType="centerInside"
+	       android:src="@drawable/arrow_down" />	    
+	    
+    </LinearLayout>
+
+</LinearLayout>

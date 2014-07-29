@@ -1,0 +1,11 @@
+<TextView  
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textViewWaypointData"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="" 
+    android:padding="5dp"
+    android:layout_gravity="center"
+    android:drawableLeft="@drawable/pin_blue_small" 
+    android:drawablePadding="5dp" />

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    	<Preference 
+    	    android:title="RESTART NEEDED TO TAKE EFFECT!!!"/>
+        <CheckBoxPreference
+              android:title="Mode 1"
+              android:defaultValue="false"
+              android:key="rcMode1"
+              android:icon="@drawable/mode1" /> 
+        <CheckBoxPreference
+              android:title="Mode 2"
+              android:defaultValue="false"
+              android:key="rcMode2"
+              android:icon="@drawable/mode2" /> 
+        <CheckBoxPreference
+              android:title="Mode 3"
+              android:defaultValue="true"
+              android:key="rcMode3"
+              android:icon="@drawable/mode3" /> 
+        <CheckBoxPreference
+              android:title="Mode 4"
+              android:defaultValue="false"
+              android:key="rcMode4"
+              android:icon="@drawable/mode4" />    
+</PreferenceScreen>

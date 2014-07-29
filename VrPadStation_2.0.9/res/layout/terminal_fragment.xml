@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+        
+      	<Button
+	   		style="@style/button_mainmenu"
+			android:id="@+id/btnRebootApm"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.25"
+			android:textColor="@android:color/white"
+			android:text="Reeboot APM"
+    		android:padding="2dp"
+    		android:layout_margin="2dp" />
+      	<Button
+	   		style="@style/button_mainmenu"
+			android:id="@+id/btnTests"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.25"
+			android:textColor="@android:color/white"
+			android:text="Tests" 
+    		android:padding="2dp"
+    		android:layout_margin="2dp" />		
+		<Space 
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.25"
+		    />
+      	<Button
+	   		style="@style/button_mainmenu"
+			android:id="@+id/btnDisconnect"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.25"
+			android:textColor="@android:color/white"
+			android:text="Disconnect"
+    		android:padding="2dp"
+    		android:layout_margin="2dp" />			        
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableRow1" >
+        
+      	<Button
+	   		style="@style/button_mainmenu"
+			android:id="@+id/btnSetupShow"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.25"
+			android:textColor="@android:color/white"
+			android:text="Show setup"
+    		android:padding="2dp"
+    		android:layout_margin="2dp" />	
+      	<Button
+	   		style="@style/button_mainmenu"
+			android:id="@+id/btnRadioSetup"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.25"
+			android:textColor="@android:color/white"
+			android:text="Radio setup"
+    		android:padding="2dp"
+    		android:layout_margin="2dp" />	
+      	<Button
+	   		style="@style/button_mainmenu"
+			android:id="@+id/btnLogsDownload"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.25"
+			android:textColor="@android:color/white"
+			android:text="Download logs "
+    		android:padding="2dp"
+    		android:layout_margin="2dp" />	
+      	<Button
+	   		style="@style/button_mainmenu"
+			android:id="@+id/btnLogsBrowse"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.25"
+			android:textColor="@android:color/white"
+			android:text="Browse logs " 
+    		android:padding="2dp"
+    		android:layout_margin="2dp"/>											
+    </TableRow>
+    
+    
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <EditText
+            android:id="@+id/editTextInput"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+			android:layout_weight="0.75"
+            android:singleLine="true"
+			android:padding="2dp"
+			android:layout_margin="2dp"
+			android:background="@android:color/black"
+			android:textColor="@android:color/white"
+            android:ems="10" >
+		</EditText>
+		
+		<Button
+	   		style="@style/button_mainmenu"
+			android:id="@+id/btnSendCommand"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="0.25"
+			android:textColor="@android:color/white"
+			android:text="Send" 
+    		android:padding="2dp"
+    		android:layout_margin="2dp"/>
+										
+    </TableRow>
+    
+    <ScrollView
+            android:id="@+id/scrollTerminal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        	android:layout_below="@id/tableRow2"
+        	android:layout_above="@id/tableRow3"
+    		android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+    			android:background="@drawable/border" >
+
+                <TextView
+                    android:id="@+id/txtTerminal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+    				android:padding="2dp"
+    				android:layout_margin="2dp"
+    				android:background="@android:color/black"
+    				android:textColor="@android:color/holo_blue_light"
+                    android:text="" />
+
+            </LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

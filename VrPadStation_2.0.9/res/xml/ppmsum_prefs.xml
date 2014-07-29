@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        
+      <PreferenceCategory
+         android:key="rc_transmission_options"
+   		 android:title="PPMSUM Transmission Options" >
+   		 
+    	<EditTextPreference
+              android:name="Transmissione Rate (Hz)"
+              android:dialogTitle=""
+              android:summary=""
+              android:defaultValue="50"
+              android:title="Transmissione Rate (Hz)"
+              android:inputType="number"
+              android:key="transmissionRate" />
+         <EditTextPreference
+              android:name="Min Value"
+              android:dialogTitle=""
+              android:summary=""
+              android:defaultValue="1000"
+              android:title="Min Value"
+              android:inputType="number"
+              android:key="minPulseWidth" />
+         <EditTextPreference
+              android:name="Max Value"
+              android:dialogTitle=""
+              android:summary=""
+              android:defaultValue="2000"
+              android:title="Max Value"
+              android:inputType="number"
+              android:key="maxPulseWidth" />   
+        <CheckBoxPreference
+              android:title="Audio Signal"
+              android:defaultValue="true"
+              android:key="checkAudioSignal" />
+         <CheckBoxPreference
+              android:title="Audio Signal Reverse"
+              android:defaultValue="false"
+              android:key="checkSignalReverse" />
+         <CheckBoxPreference
+              android:title="Switch channels"
+              android:defaultValue="false"
+              android:key="switchChannel" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

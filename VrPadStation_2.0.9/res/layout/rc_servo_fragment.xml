@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:weightSum="10" >
+    
+    <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="3dp"
+	 	android:background="@drawable/border" />
+    
+    <TextView
+        android:id="@+id/titleTxtViewRc"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	 	android:layout_weight="1"
+	 	android:textStyle="bold"
+	    android:text="@string/rc_channels"
+	    android:gravity="center" />
+	    
+    <TextView
+        android:id="@+id/txtViewRc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_margin="5dp"
+        android:text=""
+    	android:gravity="center" />
+        
+    <TextView
+        android:id="@+id/titleTxtViewServo"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	 	android:layout_weight="1"
+	 	android:textStyle="bold"
+	    android:text="@string/rc_servos"
+	    android:gravity="center" />
+    	    
+    <TextView
+        android:id="@+id/txtViewServo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_margin="5dp"
+        android:text=""
+    	android:gravity="center" />
+    
+</LinearLayout>

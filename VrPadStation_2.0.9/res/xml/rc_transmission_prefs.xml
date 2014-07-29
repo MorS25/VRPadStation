@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+                  
+         <PreferenceCategory
+             android:key="rc_transmission_type"
+       		 android:title="Transmission Type" >
+       		 <CheckBoxPreference
+              android:title="MAVLink"
+              android:defaultValue="false"
+              android:key="mavlink" /> 
+   			<CheckBoxPreference
+              android:title="PPMSUM"
+              android:defaultValue="false"
+              android:key="ppmsum" /> 
+         </PreferenceCategory>
+         
+</PreferenceScreen>

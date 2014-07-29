@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.laser.VrPadStation"
+    android:versionCode="107"
+    android:versionName="2.0.9" >
+    
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+    
+    <compatible-screens >
+        <screen android:screenSize="normal" />
+        <screen android:screenSize="large" />
+        <screen android:screenSize="xlarge" />
+    </compatible-screens>
+    
+    <supports-screens 
+        android:smallScreens="false"
+		android:normalScreens="true"
+		android:largeScreens="true"
+		android:xlargeScreens="true" />
+    
+    <uses-feature android:name="android.hardware.usb.host" />
+        
+    <permission
+        android:name="com.vogella.android.locationapi.maps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <!-- Support devices that don't have location services -->
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+        
+    <uses-permission android:name="com.vogella.android.locationapi.maps.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    
+    <application
+        android:name="com.laser.app.VrPadStationApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_laser_bianco_128"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme"
+        android:hardwareAccelerated="true" >
+            	
+        <service android:name="com.laser.service.MAVLinkService"></service>
+        
+        <activity            
+            android:name="com.laser.ui.activities.MainMenuActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />                
+            </intent-filter>          
+            
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>            
+            <meta-data
+    			android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" 
+      			android:resource="@xml/device_filter" />    
+        </activity>
+        
+		<activity
+            android:name="com.laser.ui.activities.ParentActivity"  >           
+        </activity>
+        
+        <activity
+            android:name="com.laser.ui.activities.SettingsActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo"
+            android:configChanges="orientation|screenSize"  >           
+        </activity>
+        
+		<activity
+            android:name="com.laser.ui.activities.SettingsActivityGcs"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo"
+            android:configChanges="orientation|screenSize"  >           
+        </activity>
+
+		<activity
+            android:name="com.laser.ui.activities.SettingsActivityRadio"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo"
+            android:configChanges="orientation|screenSize"  >           
+        </activity>
+
+		<activity
+            android:name="com.laser.ui.activities.SettingsActivityGimbal"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo"
+            android:configChanges="orientation|screenSize"  >           
+        </activity>
+
+        
+        <activity
+            android:name="com.laser.ui.activities.GcsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo"
+            android:configChanges="orientation|screenSize" 
+            android:launchMode="singleTask">        
+        </activity>
+        
+        <activity
+            android:name="com.laser.ui.activities.RadioActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo"
+            android:configChanges="orientation|screenSize" 
+            android:launchMode="singleTask" >        
+        </activity>
+                        
+                
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAdDswiWn2SeubEiKE8R1FIbo4joA_Pe7Y" />
+        
+        <meta-data 
+            android:name="com.google.android.gms.version" 
+            android:value="@integer/google_play_services_version" />
+        
+    </application>
+
+</manifest>

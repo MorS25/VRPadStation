@@ -1,0 +1,57 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/carbon_texture" >
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.5"
+	    android:orientation="horizontal" >
+	    
+	    <ImageButton
+	       style="@style/imageButton_mainmenu"
+		    android:id="@+id/btnSettingsGcs"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="0.5"
+	        android:layout_margin="2dp"
+	        android:padding="5dp"
+	        android:scaleType="centerInside"
+	        android:src="@drawable/gcs" />
+	    
+	    <ImageButton
+	       style="@style/imageButton_mainmenu"
+		    android:id="@+id/btnSettingsRadio"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="0.5"
+	        android:layout_margin="2dp"
+	        android:padding="5dp"
+	        android:scaleType="centerInside"
+	        android:src="@drawable/joystick" />
+        
+	</LinearLayout> 
+	
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.5"
+	    android:orientation="horizontal" >
+	    
+        <ImageButton
+	        style="@style/imageButton_mainmenu"
+		    android:id="@+id/btnSettingsGimbal"
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_weight="0.5"
+	        android:layout_margin="2dp"
+	        android:padding="5dp"
+	        android:scaleType="centerInside"
+	        android:src="@drawable/gimbal"
+		    android:enabled="false" />
+
+	</LinearLayout> 
+</LinearLayout> 

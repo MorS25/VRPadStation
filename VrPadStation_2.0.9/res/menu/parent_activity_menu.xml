@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <item
+        android:id="@+id/action_bar_voltage"
+        android:showAsAction="always"
+        android:actionLayout="@layout/layout_action_bar_battery" >        
+    </item>
+    <item
+        android:id="@+id/action_bar_gps_status"
+        android:showAsAction="always"
+        android:actionLayout="@layout/layout_action_bar_gps_status" >        
+    </item>
+    <item
+        android:id="@+id/action_bar_drone"
+        android:showAsAction="always"
+        android:actionLayout="@layout/layout_action_bar_drone" >        
+    </item>
+    <item 
+        android:id="@+id/action_bar_connect"
+        android:showAsAction="always"
+        android:actionLayout="@layout/layout_action_bar_connect">
+    </item>
+    <item 
+        android:id="@+id/action_bar_gcs"
+        android:showAsAction="always"
+        android:actionLayout="@layout/layout_action_bar_gcs">
+    </item>    
+    <item 
+        android:id="@+id/action_bar_radio"
+        android:showAsAction="always"
+        android:actionLayout="@layout/layout_action_bar_radio">
+    </item>
+    <item 
+        android:id="@+id/action_bar_gimbal"
+        android:showAsAction="always"
+        android:actionLayout="@layout/layout_action_bar_gimbal">
+    </item>    
+    <item 
+        android:id="@+id/action_bar_settings"
+        android:showAsAction="always"
+        android:actionLayout="@layout/layout_action_bar_settings">
+    </item>
+   
+</menu>

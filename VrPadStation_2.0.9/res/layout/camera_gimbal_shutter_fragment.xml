@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+    
+    
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.15"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:text="SHUTTER" />
+
+	<LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.7"
+    	android:baselineAligned="false" >
+	    
+		<LinearLayout 
+			    android:layout_width="0dp"
+			    android:layout_height="match_parent"
+			    android:layout_weight="0.4"
+			    android:orientation="vertical"
+			    android:weightSum="1" >
+		
+				<ImageView
+				    android:id="@+id/imageViewComponent"
+				    android:layout_width="match_parent"
+				    android:layout_height="0dp"
+			    	android:layout_weight="0.6"
+			    	android:scaleType="centerInside"
+				    android:src="@drawable/shutter" />
+		
+				<TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="0.4"
+			        android:gravity="center"
+				    android:text="Set the Ch7 option to camera trigger" />
+		
+			</LinearLayout>
+			    
+			    
+			<LinearLayout 
+			    android:layout_width="0dp"
+			    android:layout_height="match_parent"
+			    android:layout_weight="0.6"
+			    android:orientation="vertical"
+			    android:weightSum="4" >
+				
+				<TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="0.5"
+			        android:gravity="center"
+				    android:text="Servo Limits" />
+					
+				<TableRow
+			        android:layout_width="match_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="1"
+			        android:gravity="center_horizontal"
+			        android:padding="5dp">
+			        
+				    <TextView
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.2"
+			            android:text="Min"
+			            android:gravity="center" />
+			
+			        <EditText
+			            android:id="@+id/editTextServoLimitMin"
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.3"
+			            android:ems="10"
+			            android:inputType="number" >
+			        </EditText>
+			        
+			        <TextView
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.2"
+			            android:text="Max"
+			            android:gravity="center" />
+			
+			        <EditText
+			            android:id="@+id/editTextServoLimitMax"
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.3"
+			            android:ems="10"
+			            android:inputType="number" >
+			        </EditText>
+			    </TableRow>
+			    
+				<TextView
+			        android:layout_width="match_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="0.5"
+			        android:gravity="center"
+				    android:text="Shutter" />	
+			    
+			    
+				<TableRow
+			        android:layout_width="match_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="1"
+			        android:gravity="center_horizontal"
+			        android:padding="5dp">
+			        
+				    <TextView
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.2"
+			            android:text="Pushed"
+			            android:gravity="center" />
+			
+			        <EditText
+			            android:id="@+id/editTextPushed"
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.3"
+			            android:ems="10"
+			            android:inputType="number" >
+			        </EditText>
+			        
+			        <TextView
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.2"
+			            android:text="Not Pushed"
+			            android:gravity="center" />
+			
+			        <EditText
+			            android:id="@+id/editTextNotPushed"
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.3"
+			            android:ems="10"
+			            android:inputType="number" >
+			        </EditText>
+			    </TableRow>
+			    
+				<TableRow
+			        android:layout_width="match_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="1"
+			        android:gravity="center_horizontal"
+			        android:padding="5dp">
+		
+			        
+				    <TextView
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.2"
+			            android:text="Duration (1/10th sec)"
+			            android:gravity="center" />
+		
+			        <EditText
+			            android:id="@+id/editTextDuration"
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.3"
+			            android:ems="10"
+			            android:inputType="number" >
+			        </EditText>	        
+			        
+				    <TextView
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.2"
+			            android:text="Output Ch"
+			            android:gravity="center" />
+		
+				    <Spinner
+				        android:id="@+id/spinnerOutputCh"
+			            android:layout_width="0dp"
+			            android:layout_height="match_parent"
+			            android:layout_weight="0.3" />	        
+		
+			    </TableRow>		
+			    
+			</LinearLayout>	    
+	    
+	    
+	</LinearLayout>
+
+	<Button
+   		style="@style/button_mainmenu"
+		android:textColor="@android:color/white"
+	    android:id="@+id/btnSave"
+	    android:layout_width="wrap_content"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.15"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+        android:text=" Send to drone " />  
+    
+</LinearLayout>

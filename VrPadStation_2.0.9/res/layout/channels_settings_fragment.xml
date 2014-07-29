@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12" >
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center_horizontal"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/btnPitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Pitch" />
+
+        <Button
+            android:id="@+id/btnRoll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Roll" />
+
+        <Button
+            android:id="@+id/btnYaw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Yaw" />
+
+        <Button
+            android:id="@+id/btnThrottle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Throttle" />        
+
+    </TableRow>
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10.5"
+        android:gravity="center_horizontal"
+        android:padding="5dp" >
+        
+         <com.laser.ui.widgets.CustomViewPager
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/fragmentMain2" >
+		</com.laser.ui.widgets.CustomViewPager> 
+
+    </TableRow>
+
+    
+ 
+</LinearLayout>

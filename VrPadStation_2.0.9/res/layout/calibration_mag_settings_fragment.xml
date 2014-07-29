@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="11" >
+    
+	<TableRow
+        android:id="@+id/cmp_tableRowUse"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/cmp_lblUse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Use Compass For Heading"
+            android:layout_weight="0.8" />
+
+        <CheckBox
+            android:id="@+id/cmp_chkUse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="0.2" />
+
+    </TableRow>    
+    
+	<TableRow
+        android:id="@+id/cmp_tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/cmp_lblEnabled"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mag. Enabled"
+            android:layout_weight="0.8" />
+
+        <CheckBox
+            android:id="@+id/cmp_chkEnabled"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="0.2" />
+
+    </TableRow>    
+    	<TableRow
+        android:id="@+id/cmp_tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/cmp_lblLearn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Auto Learn"
+            android:layout_weight="0.8" />
+
+        <CheckBox
+            android:id="@+id/cmp_chkLearn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="0.2" />
+
+    </TableRow> 
+	
+	<TableRow
+        android:id="@+id/cmp_tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/cmp_lblExternal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="External"
+            android:layout_weight="0.8" />
+
+        <CheckBox
+            android:id="@+id/cmp_chkExternal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="0.2" />
+
+    </TableRow>	
+    
+	<TableRow
+        android:id="@+id/cmp_tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/cmp_lblAutoDec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Auto Declination"
+            android:layout_weight="0.8" />
+
+        <CheckBox
+            android:id="@+id/cmp_chkAutoDec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="0.2" />
+
+    </TableRow>		
+	
+		<TableRow
+        android:id="@+id/cmp_tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:weightSum="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/cmp_lblDec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Declination (Deg°Min')"
+            android:layout_weight="0.6" />
+
+        <EditText
+            android:id="@+id/cmp_txtDecDeg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:inputType="number"
+            android:layout_weight="0.2" />
+		<EditText
+            android:id="@+id/cmp_txtDecMin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:inputType="number"
+            android:layout_weight="0.2" />
+        
+    </TableRow>	
+    
+	<TableRow
+        android:id="@+id/cmp_tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:weightSum="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/cmp_lblOrient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Orientation"
+            android:layout_weight="0.34" />
+
+        <com.laser.ui.widgets.SpinnerAuto
+            android:id="@+id/cmp_spinOrient"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.65" />
+
+    </TableRow>		
+    
+	<TableRow
+        android:id="@+id/cmp_tableRow7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:weightSum="1"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/cmp_btnRefresh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Refresh"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/cmp_btnSend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Send"
+            android:layout_weight="0.5" />
+
+    </TableRow>		
+    
+	<TableRow
+        android:id="@+id/cmp_tableRow8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:weightSum="1"
+        android:gravity="center_vertical" >
+        
+	    
+		<Button
+	       style="@style/button_mainmenu"
+	       android:id="@+id/btnMagCalib"
+	       android:layout_width="0dp"
+	       android:layout_height="match_parent"
+	       android:layout_weight="0.5"
+	       android:textColor="@android:color/white"
+	       android:text="MAG"
+	       android:layout_margin="2dp"
+	       android:padding="2dp" />
+			   
+		<Button
+	       style="@style/button_mainmenu"
+	       android:id="@+id/btnCheckYaw"
+	       android:layout_width="0dp"
+	       android:layout_height="match_parent"
+	       android:layout_weight="0.5"
+	       android:textColor="@android:color/white"
+	       android:text="CHECK YAW"
+	       android:layout_margin="2dp"
+	       android:padding="2dp" />	
+    
+    </TableRow>		
+	
+ </LinearLayout>
+
+
